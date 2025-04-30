@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #3498db;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  margin: 30px auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search-filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.search-filter input,
+.search-filter select {
+  padding: 10px;
+  font-size: 16px;
+  width: 48%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.engine-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.engine-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  background-position: center;
+  background-size: cover;
+}
+
+.engine-card:hover {
+  transform: scale(1.05);
+}
+
+.engine-card img {
+  width: 100%;
+  height: auto;
+}
+
+.engine-info {
+  padding: 20px;
+}
+
+.engine-info h3 {
+  color: red;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.engine-info p {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.details-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.details-btn:hover {
+  background-color: #0056b3;
+}
+
+.card1 {
+  color: red;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(182, 171, 171, 0.7)
+    ),
+    url(../images/tj1.jpg);
+}
+
+.card2 {
+  color: red;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(182, 171, 171, 0.7)
+    ),
+    url(../images/tf1.jpg);
+}
+
+.card3 {
+  color: red;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(182, 171, 171, 0.7)
+    ),
+    url(../images/hi1.jpg);
+}
+
+.card4 {
+  color: red;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(182, 171, 171, 0.7)
+    ),
+    url(../images/tj2.jpg);
+}
+
+.card5 {
+  color: red;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(182, 171, 171, 0.7)
+    ),
+    url(../images/tf2.gif);
+}
+
+.card6 {
+  color: red;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(182, 171, 171, 0.7)
+    ),
+    url(../images/pj1.gif);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: none;
+}

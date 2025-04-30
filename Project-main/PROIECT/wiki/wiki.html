@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List of Jet Engines</title>
+    <link rel="stylesheet" href="style3.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <img src="../images/logo.png" class="logo" />
+        <nav>
+          <ul>
+            <li><a href="../introducere/motoare.html">HOME</a></li>
+            <li><a href=" ">LOGIN/REGISTER</a></li>
+            <li><a href="../about/introducere.html">ABOUT</a></li>
+          </ul>
+          <img src="../images/menu.png" class="menu-icon" />
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>List of Jet Engines</h1>
+
+      <div class="search-filter">
+        <input
+          type="text"
+          id="search"
+          placeholder="Search for an engine..."
+          onkeyup="filterEngines()"
+        />
+        <select id="engine-type" onchange="filterEngines()">
+          <option value="">All Engine Types</option>
+          <option value="Turbojet">Turbojet</option>
+          <option value="Turbofan">Turbofan</option>
+          <option value="Hybrid">Hybrid</option>
+          <option value="Pulsejet">Pulsejet</option>
+        </select>
+      </div>
+
+      <!-- Engine List -->
+      <div class="engine-list" id="engine-list">
+        <div class="engine-card card1" data-type="Axial Turbojet">
+          <div class="engine-info">
+            <h3><a href="">Turbojet</a></h3>
+            <p><strong>Type:</strong> <a href="">Turbojet</a></p>
+            <a href="" class="details-btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="engine-card card2" data-type="Turbofan">
+          <div class="engine-info">
+            <h3><a href="">Turbofan</a></h3>
+            <p><strong>Type:</strong> <a href="">Turbofan</a></p>
+            <a href="" class="details-btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="engine-card card3" data-type="Hybrid">
+          <div class="engine-info">
+            <h3><a href="">Air turboramjet</a></h3>
+            <p><strong>Type:</strong> <a href="">Hybrid</a></p>
+            <a href="" class="details-btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="engine-card card4" data-type="Turbojet">
+          <div class="engine-info">
+            <h3><a href="">Turboshaft</a></h3>
+            <p><strong>Type:</strong> <a href="">Turbojet</a></p>
+            <a href="" class="details-btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="engine-card card5" data-type="Turbofan">
+          <div class="engine-info">
+            <h3><a href="">Propfan</a></h3>
+            <p><strong>Type:</strong> <a href="">Turbofan</a></p>
+            <a href="" class="details-btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="engine-card card6" data-type="Pulsejet">
+          <div class="engine-info">
+            <h3><a href="../wiki/pulsejet.html">Valved Pulsejet</a></h3>
+            <p>
+              <strong>Type:</strong>
+              <a href="../wiki/pulsejet.html">Pulsejet</a>
+            </p>
+            <a href="../wiki/pulsejet.html" class="details-btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="engine-card card7" data-type="">
+          <div class="engine-info">
+            <h3><a href=""></a></h3>
+            <p><strong>Type:</strong> <a href=""></a></p>
+            <a href="" class="details-btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="engine-card card8" data-type="">
+          <div class="engine-info">
+            <h3><a href=""></a></h3>
+            <p><strong>Type:</strong> <a href=""></a></p>
+            <a href="" class="details-btn">View Details</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; JETHUB</p>
+    </footer>
+  </body>
+</html>
